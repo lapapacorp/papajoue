@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Programme — Papajoue</title>
+<link rel="icon" href="img/logo.png">
+<link rel="stylesheet" href="style.css">
+<style>
+  .schedule-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .schedule-day {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 18px;
+    display: flex;
+    gap: 16px;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+  .schedule-day .day-name {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    width: 90px;
+    flex-shrink: 0;
+  }
+  .schedule-day .day-content {
+    flex: 1 1 280px;
+  }
+  .schedule-day .day-meta {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-top: 4px;
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="index.html">Papajoue</a>
+    <nav class="site-nav">
+      <a href="index.html">Accueil</a>
+      <a href="programme.html" class="active">Programme</a>
+      <a href="partenaires.html">Partenaires</a>
+      <a href="setup.html">Setup</a>
+      <a href="apropos.html">À propos</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <h1>Programme</h1>
+    <p class="lede">Le planning des lives, à jour ici plutôt que dans une image partagée sur Discord. Cette adresse ne change pas — tu peux la garder en favori ou l'épingler.</p>
+  </div>
+
+  <div class="card" style="border-color: var(--accent-soft);">
+    <strong>📌 Pour être sûr d'avoir le programme à jour :</strong> rejoins le <a href="https://discord.gg/G6Q5cqsdb" target="_blank" rel="noopener">Discord</a> — c'est là que ça bouge en premier si un horaire change.
+  </div>
+
+  <div class="section">
+    <div class="schedule-list">
+
+      <div class="schedule-day">
+        <div class="day-name">Lundi</div>
+        <div class="day-content">
+          Si blessures 🤕 ou vacances 🤩 : je stream ! Sinon, Sport IRL : Bad, plongée ou sieste.
+          <div class="day-meta">Sport · Tous les lundis · 21:30 GMT+2</div>
+        </div>
+      </div>
+
+      <div class="schedule-day">
+        <div class="day-name">Mardi</div>
+        <div class="day-content">
+          Découvertes de jeux (Humble Choice) ✨ Des pépites ? Jeux indés et autres.
+          <div class="day-meta">Independent Games · Tous les mardis · 21:30 – 00:30 GMT+2</div>
+        </div>
+      </div>
+
+      <div class="schedule-day">
+        <div class="day-name">Mercredi</div>
+        <div class="day-content">
+          Jeux multi avec la commu 1/4 🌈 👨‍👧‍👦
+          <div class="day-meta">Tous les mercredis · 21:30 – 01:00 GMT+2</div>
+        </div>
+      </div>
+
+      <div class="schedule-day">
+        <div class="day-name">Jeudi</div>
+        <div class="day-content">
+          Jeux multi avec la commu 2/4 🌈 👨‍👧‍👦
+          <div class="day-meta">Tous les jeudis · 21:30 – 00:30 GMT+2</div>
+        </div>
+      </div>
+
+      <div class="schedule-day">
+        <div class="day-name">Vendredi</div>
+        <div class="day-content">
+          Jeux multi avec la commu 3/4 🌈 👨‍👧‍👦 + Vendregive 🎁 : giveaway d'un jeu Steam.
+          <div class="day-meta">Tous les vendredis · 21:30 – 01:30 GMT+2</div>
+        </div>
+      </div>
+
+      <div class="schedule-day">
+        <div class="day-name">Samedi</div>
+        <div class="day-content">
+          Jeux multi avec la commu 4/4 🌈 👨‍👧‍👦
+          <div class="day-meta">Tous les samedis · 21:30 – 01:30 GMT+2</div>
+        </div>
+      </div>
+
+      <div class="schedule-day">
+        <div class="day-name">Dimanche</div>
+        <div class="day-content">
+          +4 🃏🃏🃏 👿 Jeux de société avec vous sur BoardGameArena ♟
+          <div class="day-meta">Board Games · Tous les dimanches · 21:30 – 00:30 GMT+2</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="card placeholder">
+    <strong>Horaires indicatifs</strong> — ça bouge parfois selon les soirs. Le plus sûr reste de checker si c'est en direct sur <a href="https://www.twitch.tv/papajoue" target="_blank" rel="noopener">twitch.tv/papajoue</a>, ou de rejoindre le <a href="https://discord.gg/G6Q5cqsdb" target="_blank" rel="noopener">Discord</a> pour être notifié à chaque lancement.
+  </div>
+</main>
+
+<footer class="site-footer">
+  Papajoue — site en construction, complété au fil des streams.
+</footer>
+
+</body>
+</html>

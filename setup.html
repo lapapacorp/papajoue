@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Setup — Papajoue</title>
+<link rel="icon" href="img/logo.png">
+<link rel="stylesheet" href="style.css">
+<style>
+  .rigs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-top: 28px;
+  }
+  @media (max-width: 640px) {
+    .rigs { grid-template-columns: 1fr; }
+  }
+  .rig {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 24px;
+    cursor: pointer;
+  }
+  .rig h3 {
+    margin-bottom: 4px;
+  }
+  .rig .rig-tag {
+    color: var(--text-muted);
+    font-size: 0.88rem;
+    margin-bottom: 0;
+  }
+  .rig .rig-photo {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    margin-top: 14px;
+    border: 1px solid var(--border);
+  }
+  .rig .photo-caption {
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    margin-top: 6px;
+  }
+  .rig .specs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.25s ease, margin-top 0.3s ease;
+  }
+  .rig:hover .specs,
+  .rig.open .specs {
+    max-height: 600px;
+    opacity: 1;
+    margin-top: 18px;
+  }
+  .rig .specs li {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 8px 0;
+    border-top: 1px solid var(--border);
+    font-size: 0.92rem;
+  }
+  .rig .specs li:first-child { border-top: none; }
+  .rig .specs li .label {
+    color: var(--text-muted);
+    flex-shrink: 0;
+  }
+  .rig .specs li .value {
+    text-align: right;
+  }
+  .rig .hint {
+    color: var(--accent-soft);
+    font-size: 0.82rem;
+    margin-top: 10px;
+  }
+  .rig.open .hint, .rig:hover .hint { display: none; }
+
+  .peripherals {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-top: 16px;
+  }
+  @media (max-width: 640px) {
+    .peripherals { grid-template-columns: 1fr; }
+  }
+  .peripherals .card {
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .peripherals .card .role {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    display: block;
+    margin-bottom: 6px;
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="index.html">Papajoue</a>
+    <nav class="site-nav">
+      <a href="index.html">Accueil</a>
+      <a href="programme.html">Programme</a>
+      <a href="partenaires.html">Partenaires</a>
+      <a href="setup.html" class="active">Setup</a>
+      <a href="apropos.html">À propos</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <h1>Setup</h1>
+    <p class="lede">Deux machines, trois écrans, et un bureau qui monte et descend. Survole une config pour voir le détail (ou touche l'écran sur mobile).</p>
+  </div>
+
+  <div class="section">
+    <div class="rigs">
+
+      <div class="rig" tabindex="0">
+        <h3>PC Stream</h3>
+        <p class="rig-tag">Encodage, overlays, scenes</p>
+        <img class="rig-photo" src="img/pc-stream.png" alt="Boîtier du PC stream, illustration du modèle de base">
+        <p class="photo-caption">Photo du modèle de boîtier de référence — le montage réel n'est pas forcément avec ce rendu RGB.</p>
+        <p class="hint">Survole pour voir la config</p>
+        <ul class="specs">
+          <li><span class="label">Carte mère</span><span class="value">MSI MAG B550 Tomahawk</span></li>
+          <li><span class="label">Processeur</span><span class="value">AMD Ryzen 5 5600X, 6x 4.6GHz</span></li>
+          <li><span class="label">Mémoire</span><span class="value">4x 16Go DDR4 PC-3200</span></li>
+          <li><span class="label">Carte graphique</span><span class="value">Nvidia GeForce RTX 3070 8Go</span></li>
+          <li><span class="label">Stockage HDD</span><span class="value">Seagate 8To + 4To</span></li>
+          <li><span class="label">Stockage NVMe</span><span class="value">Kingston A2000 1To + Crucial 1To</span></li>
+          <li><span class="label">Écran 1</span><span class="value">Ozone 144Hz, 1440p, 27"</span></li>
+          <li><span class="label">Écran 2</span><span class="value">Hyama 144Hz, 1080p, 24"</span></li>
+        </ul>
+      </div>
+
+      <div class="rig" tabindex="0">
+        <h3>PC Gaming</h3>
+        <p class="rig-tag">La bête pour jouer</p>
+        <img class="rig-photo" src="img/pc-gaming.png" alt="Boîtier du PC gaming, illustration du modèle de base">
+        <p class="photo-caption">Photo du modèle de boîtier de référence — le montage réel n'est pas forcément en LED rouge.</p>
+        <p class="hint">Survole pour voir la config</p>
+        <ul class="specs">
+          <li><span class="label">Boîtier</span><span class="value">M.red Crystal Sea Black</span></li>
+          <li><span class="label">Carte mère</span><span class="value">Asus PRIME B760-PLUS</span></li>
+          <li><span class="label">Processeur</span><span class="value">Intel Core i7-14700KF, 5.6GHz</span></li>
+          <li><span class="label">Mémoire</span><span class="value">Corsair Vengeance RGB 32Go DDR5 6000MHz CL36</span></li>
+          <li><span class="label">Carte graphique</span><span class="value">Nvidia GeForce RTX 5080 16Go</span></li>
+          <li><span class="label">Stockage SSD</span><span class="value">Kingston SNV3S 2To NVMe Gen4</span></li>
+          <li><span class="label">Watercooling</span><span class="value">M.red ONYX 360 ARGB</span></li>
+          <li><span class="label">Alimentation</span><span class="value">M.red MRR-1300AP VP2, 80+ Platinum</span></li>
+          <li><span class="label">Écran 1</span><span class="value">Ozone 144Hz, 1440p, 27"</span></li>
+          <li><span class="label">Écran 2</span><span class="value">Hyama 144Hz, 1080p, 24"</span></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Écran de chat</h2>
+    <div class="card">
+      Un troisième écran, monté en portrait, dédié au chat en permanence.
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Périphériques</h2>
+    <div class="peripherals">
+      <div class="card">
+        <span class="role">Clavier gaming</span>
+        Razer Ornata V3
+      </div>
+      <div class="card">
+        <span class="role">Souris</span>
+        Razer Naga Trinity
+      </div>
+      <div class="card">
+        <span class="role">Pavé de raccourcis</span>
+        Razer Tartarus V2
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Bureau</h2>
+    <div class="card">
+      Bureau assis-debout, plateau en bois, avec deux Stream Deck (un modèle standard et un XL) pour piloter scènes et raccourcis en direct.
+    </div>
+    <img src="img/photo-real.jpg" alt="Papajoue en poste, casque et manette" style="width:100%; max-width:360px; border-radius:10px; border:1px solid var(--border); display:block; margin-top:4px;">
+  </div>
+</main>
+
+<footer class="site-footer">
+  Papajoue — site en construction, complété au fil des streams.
+</footer>
+
+<script>
+  // Fallback tap-to-toggle for touch devices where :hover doesn't apply
+  document.querySelectorAll('.rig').forEach(function (rig) {
+    rig.addEventListener('click', function () {
+      document.querySelectorAll('.rig').forEach(function (r) {
+        if (r !== rig) r.classList.remove('open');
+      });
+      rig.classList.toggle('open');
+    });
+  });
+</script>
+
+</body>
+</html>

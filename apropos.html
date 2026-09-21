@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>À propos — Papajoue</title>
+<link rel="icon" href="img/logo.png">
+<link rel="stylesheet" href="style.css">
+<style>
+  .about-hero {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .about-hero img.avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 20px;
+    object-fit: contain;
+    background: var(--bg-card);
+    padding: 6px;
+    border: 1px solid var(--border);
+    flex-shrink: 0;
+  }
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 14px;
+  }
+  .tag {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 0.82rem;
+    padding: 5px 12px;
+    border-radius: 999px;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 16px;
+  }
+  @media (max-width: 640px) { .gallery { grid-template-columns: 1fr; } }
+  .gallery figure {
+    margin: 0;
+  }
+  .gallery img {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    display: block;
+  }
+  .gallery figcaption {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    margin-top: 6px;
+  }
+  .emote-strip {
+    display: flex;
+    gap: 14px;
+    margin-top: 18px;
+    flex-wrap: wrap;
+  }
+  .emote-strip img {
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--bg-card);
+  }
+  .side-flex {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .side-flex.img-left { flex-direction: row; }
+  .side-flex.img-right { flex-direction: row-reverse; }
+  .side-flex .text { flex: 1 1 300px; }
+  .side-flex .text .card:last-child { margin-bottom: 0; }
+  .side-flex img.side-photo {
+    width: 220px;
+    max-width: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    flex-shrink: 0;
+    display: block;
+  }
+  .side-flex figcaption {
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    margin-top: 6px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="index.html">Papajoue</a>
+    <nav class="site-nav">
+      <a href="index.html">Accueil</a>
+      <a href="programme.html">Programme</a>
+      <a href="partenaires.html">Partenaires</a>
+      <a href="setup.html">Setup</a>
+      <a href="apropos.html" class="active">À propos</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero about-hero">
+    <img class="avatar" src="img/emotes/yo.png" alt="Avatar de Papajoue">
+    <div>
+      <h1>Papajoue</h1>
+      <p class="lede">Papa Gamer passionné et bienveillant. Je partage ma passion du jeu vidéo en famille, dans la bonne humeur et sans prise de tête. Stream chill, entraide et fun au rendez-vous !</p>
+      <div class="tags">
+        <span class="tag">Variety Gaming</span>
+        <span class="tag">Just Chatting</span>
+        <span class="tag">Francophone</span>
+        <span class="tag">Twitch Affiliate</span>
+        <span class="tag">Ambiance familiale</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Le concept</h2>
+    <div class="side-flex img-right">
+      <div class="text">
+        <div class="card">
+          Comme le nom l'indique : un papa qui joue, et qui partage cette passion avec sa communauté — la <strong>Papacorp'</strong>. Je ne me fixe pas sur un seul jeu : Fortnite, Minecraft, Valorant, jeux du moment, jeux rétro, jeux en famille avec le chat, et beaucoup de Just Chatting. L'idée n'est pas la performance esport, mais de passer un bon moment ensemble — 0% toxicité, modération stricte, tout le monde est le bienvenu.
+        </div>
+      </div>
+      <figure style="margin:0;">
+        <img class="side-photo" src="img/photo-real.jpg" alt="Papajoue en live, casque sur les oreilles">
+        <figcaption>En plein live.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Liens officiels</h2>
+    <div class="link-list">
+      <a class="tile" href="https://www.twitch.tv/papajoue" target="_blank" rel="noopener">
+        <span class="tile-title">Twitch</span>
+        <span class="tile-desc">twitch.tv/papajoue — la chaîne principale, en direct plusieurs soirs par semaine.</span>
+      </a>
+      <a class="tile" href="https://bio.link/papajoue" target="_blank" rel="noopener">
+        <span class="tile-title">Tous mes réseaux</span>
+        <span class="tile-desc">bio.link/papajoue — Discord, YouTube, TikTok, X, Instagram et plus, en un seul endroit.</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>La communauté</h2>
+    <div class="side-flex img-left">
+      <figure style="margin:0;">
+        <img class="side-photo" src="img/fanart.png" alt="Fan art de Papajoue avec Pikachu et Kirby">
+        <figcaption>Fan art — merci Gaellyam 💜</figcaption>
+      </figure>
+      <div class="text">
+        <div class="card">
+          La <strong>Papacorp'</strong> est une communauté soudée et intergénérationnelle — beaucoup de parents et de joueurs occasionnels, dans un esprit d'entraide plutôt que de compétition. Le Discord est le cœur de tout ça : annonces de live, discussions, jeux organisés avec les viewers.
+        </div>
+        <div class="card">
+          Membre de la team <strong>Gamers 4 Pets</strong>, une communauté de streamers engagée pour la cause animale.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Les émotes de la chaîne</h2>
+    <div class="emote-strip">
+      <img src="img/emotes/hype.png" alt="Émote HYPE">
+      <img src="img/emotes/heart.png" alt="Émote coeur">
+      <img src="img/emotes/party.png" alt="Émote fête">
+      <img src="img/emotes/bigbrain.png" alt="Émote big brain">
+      <img src="img/emotes/pride.png" alt="Émote coeurs arc-en-ciel">
+      <img src="img/emotes/facepalm.png" alt="Émote facepalm">
+      <img src="img/emotes/stonks.png" alt="Émote stonks">
+      <img src="img/emotes/crown.png" alt="Émote couronne">
+      <img src="img/emotes/sadclown.png" alt="Émote clown triste">
+      <img src="img/emotes/kiss.png" alt="Émote bisou">
+      <img src="img/emotes/lurk.gif" alt="Émote lurk">
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  Papajoue — site en construction, complété au fil des streams.
+</footer>
+
+</body>
+</html>

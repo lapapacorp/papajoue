@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&display=swap');
+
+:root {
+  --bg: #17121D;
+  --bg-card: #231B2D;
+  --bg-card-hover: #2D2338;
+  --text: #F3EEE6;
+  --text-muted: #B3A3C4;
+  --accent: #B15CE0;
+  --accent-soft: #7C6A9E;
+  --border: #362A44;
+  --focus: #B15CE0;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Work Sans', system-ui, sans-serif;
+  line-height: 1.55;
+}
+
+h1, h2, h3 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0 0 0.4em 0;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+}
+
+.wrap {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 24px 100px 24px;
+}
+
+header.site-header {
+  padding: 40px 24px 0 24px;
+}
+
+header.site-header .inner {
+  max-width: 780px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 12px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 20px;
+}
+
+.brand {
+  font-family: 'Fraunces', serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.brand:hover { text-decoration: none; color: var(--accent); }
+
+nav.site-nav {
+  display: flex;
+  gap: 22px;
+  font-size: 0.95rem;
+}
+
+nav.site-nav a {
+  color: var(--text-muted);
+}
+
+nav.site-nav a.active {
+  color: var(--accent);
+}
+
+.hero {
+  padding: 56px 0 8px 0;
+  max-width: 620px;
+}
+
+.hero p.lede {
+  color: var(--text-muted);
+  font-size: 1.08rem;
+  max-width: 56ch;
+}
+
+.section {
+  margin-top: 56px;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 22px 24px;
+  margin-bottom: 16px;
+}
+
+.card.placeholder {
+  border-style: dashed;
+  color: var(--text-muted);
+}
+
+.card.placeholder strong { color: var(--text); }
+
+.link-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.link-list a.tile {
+  display: block;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 18px 22px;
+  color: var(--text);
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.link-list a.tile:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--accent-soft);
+  text-decoration: none;
+}
+
+.link-list a.tile .tile-title {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 1.15rem;
+  display: block;
+}
+
+.link-list a.tile .tile-desc {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+
+table.schedule {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table.schedule th, table.schedule td {
+  text-align: left;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+table.schedule th {
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 0.88rem;
+}
+
+table.schedule td.day {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+}
+
+footer.site-footer {
+  max-width: 780px;
+  margin: 60px auto 0 auto;
+  padding: 24px;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
