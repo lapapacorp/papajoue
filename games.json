@@ -1,0 +1,46 @@
+{
+  "updatedAt": null,
+  "games": [
+    {
+      "appid": 1145360, "name": "Hades",
+      "image": "https://cdn.akamai.steamstatic.com/steam/apps/1145360/library_600x900.jpg",
+      "header": "https://cdn.akamai.steamstatic.com/steam/apps/1145360/header.jpg",
+      "short": "Exemple : ces données seront remplacées par les vraies données Steam au premier lancement du script.",
+      "about": "<p>Données d'exemple.</p>",
+      "genres": ["Action", "Indépendant", "RPG"], "release": "17 sept. 2020", "developers": ["Supergiant Games"],
+      "price": { "free": false, "final": "24,50€", "initial": null, "discount": 0 },
+      "metacritic": 93, "reviews": { "score": 9, "label": "Extrêmement positives", "percent": 98, "total": 250000 },
+      "url": "https://store.steampowered.com/app/1145360/"
+    },
+    {
+      "appid": 413150, "name": "Stardew Valley",
+      "image": "https://cdn.akamai.steamstatic.com/steam/apps/413150/library_600x900.jpg",
+      "header": "https://cdn.akamai.steamstatic.com/steam/apps/413150/header.jpg",
+      "short": "Exemple de description.", "about": "<p>Données d'exemple.</p>",
+      "genres": ["Simulation", "Indépendant"], "release": "26 févr. 2016", "developers": ["ConcernedApe"],
+      "price": { "free": false, "final": "13,99€", "initial": "16,99€", "discount": 18 },
+      "metacritic": 89, "reviews": { "score": 9, "label": "Extrêmement positives", "percent": 98, "total": 600000 },
+      "url": "https://store.steampowered.com/app/413150/"
+    },
+    {
+      "appid": 504230, "name": "Celeste",
+      "image": "https://cdn.akamai.steamstatic.com/steam/apps/504230/library_600x900.jpg",
+      "header": "https://cdn.akamai.steamstatic.com/steam/apps/504230/header.jpg",
+      "short": "Exemple de description.", "about": "<p>Données d'exemple.</p>",
+      "genres": ["Plateformes", "Indépendant"], "release": "25 janv. 2018", "developers": ["Maddy Makes Games"],
+      "price": { "free": false, "final": "19,99€", "initial": null, "discount": 0 },
+      "metacritic": 92, "reviews": { "score": 9, "label": "Extrêmement positives", "percent": 97, "total": 90000 },
+      "url": "https://store.steampowered.com/app/504230/"
+    },
+    {
+      "appid": 367520, "name": "Hollow Knight",
+      "image": "https://cdn.akamai.steamstatic.com/steam/apps/367520/library_600x900.jpg",
+      "header": "https://cdn.akamai.steamstatic.com/steam/apps/367520/header.jpg",
+      "short": "Exemple de description.", "about": "<p>Données d'exemple.</p>",
+      "genres": ["Action", "Aventure", "Indépendant"], "release": "24 févr. 2017", "developers": ["Team Cherry"],
+      "price": { "free": false, "final": "14,99€", "initial": null, "discount": 0 },
+      "metacritic": 87, "reviews": { "score": 9, "label": "Extrêmement positives", "percent": 96, "total": 300000 },
+      "url": "https://store.steampowered.com/app/367520/"
+    }
+  ]
+}

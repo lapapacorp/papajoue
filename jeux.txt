@@ -1,0 +1,11 @@
+# Un jeu par ligne. Formats acceptés :
+#   Nom du jeu
+#   Nom du jeu | appid            (utile si le nom est ambigu)
+#   appid
+#   https://store.steampowered.com/app/1145360/Hades/
+# Les lignes qui commencent par # sont ignorées.
+
+Hades
+Stardew Valley
+Celeste
+Hollow Knight
